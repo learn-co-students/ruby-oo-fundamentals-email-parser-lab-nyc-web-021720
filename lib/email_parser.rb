@@ -4,8 +4,8 @@ require 'pry'
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 class EmailAddressParser
-    def initialize(email_addresses)
-        @email_addresses = email_addresses
+    def initialize(emails)
+        @email_addresses = emails
     end
 
     attr_accessor :email_addresses
