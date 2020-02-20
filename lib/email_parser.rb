@@ -23,6 +23,16 @@
 # end
 # EmailAddressParser.new(email_addresses).parse
 
+# class EmailAddressParser
+#     attr_accessor :emails
+#     def initialize(emails)
+#        @emails = emails
+#     end
+#     def parse
+#      emails.split(" ").map{|email| email.tr(",","")}.uniq
+#     end
+# end
+
 class EmailAddressParser
     def initialize(emails)
         @emails = emails
@@ -32,6 +42,7 @@ class EmailAddressParser
        @emails.split(/[,\s]+/).uniq     
         
     end
+ 
  
 end
 
