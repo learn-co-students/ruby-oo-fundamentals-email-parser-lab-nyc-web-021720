@@ -22,7 +22,8 @@ class EmailAddressParser
                 nil
             end
         end
-        new_arr
+        new_arr.uniq
     end
 end
 # new_arr.include?(one_email) ? nil : new_arr.push(one_email.strip)
+# Test wants us to REMOVE duplicates. Code does not ALLOW DUPLICATES to be added. Tests still pass. 
