@@ -10,8 +10,10 @@ class EmailAddressParser
     attr_accessor :mail
 
     def parse
-        mail.split(/, | /).uniq
-        #mail.split(/, | /).uniq
+        mail.split(/, | /).uniq #/ / is your regex. Inside of it is a pattern we are telling it to find so we can split.
+                                # Fist pattern is just ", " from the string 
+                                #Second pattern is just " ". Run binding.pry with only first pattern to understand.
+                                # And = "|" which is is saying using ", " AND " " as delimeters 
     end 
 
 end
